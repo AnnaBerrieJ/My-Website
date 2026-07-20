@@ -823,13 +823,13 @@
         </a>
       </div>
 
-      <div class="contact-form">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Tell me about your project..."></textarea>
-        <a href="mailto:ashleyfernander@gmail.com" class="btn-grad">Send Message</a>
-      </div>
+      <form class="contact-form" action="https://formspree.io/f/mdaqzwga" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Tell me about your project..."></textarea>
+        <button type="submit" class="btn-grad">Send Message</button>
+      </form>
     </div>
   </div>
 </section>
